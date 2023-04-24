@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HYDROPONIC PLANT LEAF CLASSIFICATION OUTPUT RESULT</title>
+</head>
+<style>
+  label
+{
+font-size: 20px;
+color:red;
+font-family:  Algerian;
+}
+body
+  {
+    background: url(../static/image/b.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 100vh;
+}
+  button
+{
+font-size: 20px;
+font-family:  wide latin;
+color:black;
+background-color: green;
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+}
+#ss
+{
+font-size: 20px;
+color:#20fc03;
+background-color: black;
+font-family:  Times new roman;
+}
+.blink_me {
+  animation: blinker 5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+h2
+{
+background-color: initial;
+font-family: serif;
+font-size: 40px;
+font-weight: 900;
+text-shadow: 2px 2px red;
+letter-spacing: 3px;
+color:black;
+}
+
+h1,h3
+{
+font-family: Algerian;
+font-size: 33px;
+letter-spacing: 3px;
+color:black;
+}
+a
+{
+font-size: 20px;
+color:yellow  ;
+font-family:  Times new roman;
+}
+
+
+</style>
+<body>
+
+
+<center><h2 class="blink_me">HYDROPONIC PLANT LEAF CLASSIFICATION USING ARTIFICIAL INTELLIGENCE</h2></center><br><br><br><br>
+ <center><b><h1>{{out}}</h1></b></center>
+
+<h3><a href="{% url 'home' %}">Go Back!!!</a></h3>
+
+
+</body>
+</html>
